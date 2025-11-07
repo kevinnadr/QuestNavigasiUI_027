@@ -44,3 +44,6 @@ fun TampilData(
         }){  isiRuang->
         Column(modifier = Modifier.padding(isiRuang),
             verticalArrangement = Arrangement.SpaceAround){
+            Column (modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_medium)),
+                verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_small))){
+                items.forEach { item->
