@@ -28,4 +28,13 @@ import com.example.questnavigasiui_027.R
 fun FormIsian(
     jenisk: List<String> = listOf("Laki-laki","Perempuan"),
     OnSubmitBtnClick : () -> Unit
-)
+) {
+    Scaffold (modifier = Modifier,
+        {
+            TopAppBar(
+                title = {Text(text = stringResource(id = R.string.home), color = Color.White)},
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    colorResource(id = R.color.teal_700)
+                )
+            ) }
+    )
