@@ -52,3 +52,13 @@ fun TampilData(
                         Text(text = item.second, fontWeight = FontWeight.Bold, fontFamily = FontFamily.Cursive, fontSize = 22.sp)
                     }
                     Spacer(modifier = Modifier.height(10.dp))
+                    Button(
+                        modifier = Modifier.fillMaxWidth(),
+                        onClick = onBackBtnClick) {
+                        Text(text = stringResource(id = R.string.back))
+                    }
+                }
+            }
+        }
+    }
+}
